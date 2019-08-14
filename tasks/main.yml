@@ -1,0 +1,10 @@
+---
+# tasks file for python3
+
+- name: Import debian.yml if OS family is Debian
+  import_tasks: install_debian.yml
+  when: ansible_os_family == 'Debian'
+
+- name: Import install_centos.yml if OS family is CentOS
+  import_tasks: install_centos.yml
+  when: ansible_distribution == 'CentOS'

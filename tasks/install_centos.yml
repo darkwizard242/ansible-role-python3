@@ -1,0 +1,7 @@
+---
+# tasks file for python3 - CentOS
+
+- name: Installing "{{ python3_app_el_package }}" on CentOS systems
+  package:
+    name: "{{ python3_app_el_package }}"
+    state: "{{ python3_desired_state }}"
