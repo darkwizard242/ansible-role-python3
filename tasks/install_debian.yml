@@ -5,3 +5,5 @@
   package:
     name: "{{ python3_app_debian_package }}"
     state: "{{ python3_desired_state }}"
+    force_apt_get: yes
+    update_cache: yes
