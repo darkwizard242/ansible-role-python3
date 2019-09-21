@@ -11,15 +11,15 @@ PYTHON3_PACKAGE = 'python3'
 
 
 def test_python3_package_installed(host):
-    host.package("PYTHON3_DEBIAN_PACKAGE").is_installed
+    host.package("PYTHON3_PACKAGE").is_installed
 
 
 def test_python3_binary_exists(host):
-    host.file('PYTHON3_DEBIAN_BINARY_PATH').exists
+    host.file('PYTHON3_BINARY_PATH').exists
 
 
 def test_python3_binary_file(host):
-    host.file('PYTHON3_DEBIAN_BINARY_PATH').is_file
+    host.file('PYTHON3_BINARY_PATH').is_file
 
 
 def test_python3_binary_whereis(host):
