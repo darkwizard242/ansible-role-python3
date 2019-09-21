@@ -23,4 +23,4 @@ def test_python3_binary_file(host):
 
 
 def test_python3_binary_whereis(host):
-    host.check_output('whereis python3') == PYTHON3_DEBIAN_BINARY_PATH
+    host.check_output('whereis python3') == PYTHON3_BINARY_PATH
