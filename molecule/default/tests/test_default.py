@@ -19,4 +19,4 @@ def test_python3_binary_file(host):
 
 
 def test_python3_binary_which(host):
-    assert host.check_output('whereis python3') == '/usr/bin/python3'
+    assert host.check_output('which python3') == '/usr/bin/python3'
