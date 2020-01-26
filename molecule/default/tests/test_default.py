@@ -7,7 +7,8 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 
 def test_python3_package_installed(host):
-    assert host.package("python3").is_installed
+    assert host.package("python3").is_installed or \
+      host.package("python36").is_installed
 
 
 def test_python3_binary_exists(host):
