@@ -12,17 +12,21 @@ None.
 
 Available variables are listed below (located in `defaults/main.yml`):
 
+### Variables list:
+
 ```yaml
 python3_app_debian_package: python3
 python3_app_el_package: python3
 python3_desired_state: present
 ```
 
-Variable `python3_app_debian_package`: Defines the app to install on Debian based systems i.e. **python3**
+### Variables table:
 
-Variable `python3_app_el_package`: Defines the app to install on Enterprise Linux (Redhat/CentOS) systems i.e. **python3**
-
-Variable `python3_desired_state`: Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package.
+Variable                   | Value (default) | Description
+-------------------------- | --------------- | -----------------------------------------------------------------------------------------------------------------------------
+python3_app_debian_package | python3         | Defines the app to install on Debian based systems i.e. **python3**
+python3_app_el_package     | python3         | Defines the app to install on Enterprise Linux (Redhat/CentOS) systems i.e. **python3**
+python3_desired_state      | present         | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package.
 
 ## Dependencies
 
