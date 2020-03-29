@@ -2,7 +2,7 @@
 
 # Ansible Role: python3
 
-Role to install `python3` package on **Debian/Ubuntu** and **EL** systems. These are the default versions available in repositories and may change based on whatever is available on the default OS repositories.
+Role to install [python3](https://www.python.org/) package on **Debian/Ubuntu** and **EL** systems. These are the default versions available in repositories and may change based on whatever is available on the default OS repositories.
 
 ## Requirements
 
@@ -39,7 +39,7 @@ For default behaviour of role (i.e. installation of **python3** package) in ansi
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.python3
+    - darkwizard242.python3
 ```
 
 For customizing behavior of role (i.e. installation of latest **python3** package instead of ensure it is installed ) in ansible playbooks.
@@ -47,9 +47,9 @@ For customizing behavior of role (i.e. installation of latest **python3** packag
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.python3
-      vars:
-        python3_desired_state: latest
+    - darkwizard242.python3
+  vars:
+    python3_desired_state: latest
 ```
 
 For customizing behavior of role (i.e. installation of **python3** package in regards to EL systems) in ansible playbooks.
@@ -57,9 +57,9 @@ For customizing behavior of role (i.e. installation of **python3** package in re
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.python3
-      vars:
-        python3_app_el_package: python3
+    - darkwizard242.python3
+  vars:
+    python3_app_el_package: python3
 ```
 
 ## License
