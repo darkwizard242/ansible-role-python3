@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: python3
-  author: Ali Muhammad
+  author: darkwizard242
   description: Role for dynamically installing or uninstalling 'python3.x' package (version available in default OS repos) on Debian and EL systems.
   company: none
   license: MIT
