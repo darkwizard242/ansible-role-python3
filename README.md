@@ -22,11 +22,11 @@ python3_desired_state: present
 
 ### Variables table:
 
-Variable                   | Value (default) | Description
--------------------------- | --------------- | -----------------------------------------------------------------------------------------------------------------------------
-python3_app_debian_package | python3         | Defines the app to install on Debian based systems i.e. **python3**
-python3_app_el_package     | python3         | Defines the app to install on Enterprise Linux (Redhat/CentOS) systems i.e. **python3**
-python3_desired_state      | present         | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package.
+Variable                   | Description
+-------------------------- | -----------------------------------------------------------------------------------------------------------------------------
+python3_app_debian_package | Defines the app to install on Debian based systems i.e. **python3**
+python3_app_el_package     | Defines the app to install on Enterprise Linux (Redhat/CentOS) systems i.e. **python3**
+python3_desired_state      | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package.
 
 ## Dependencies
 
@@ -68,4 +68,4 @@ For customizing behavior of role (i.e. installation of **python3** package in re
 
 ## Author Information
 
-This role was created by [Ali Muhammad](https://www.linkedin.com/in/ali-muhammad-759791130/), a DevOps/CloudOps Engineer who loves to learn and contribute to Open Source community.
+This role was created by [Ali Muhammad](https://www.alimuhammad.dev/), a DevOps/CloudOps Engineer who loves to learn and contribute to Open Source community.
