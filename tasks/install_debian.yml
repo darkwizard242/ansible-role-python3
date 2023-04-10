@@ -2,7 +2,7 @@
 # tasks file for python3 - Debian/Ubuntu Family
 
 - name: Debian/Ubuntu Family | Installing {{ python3_app_debian_package }}
-  package:
+  ansible.builtin.package:
     name: "{{ python3_app_debian_package }}"
     state: "{{ python3_desired_state }}"
     force_apt_get: yes
