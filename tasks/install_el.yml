@@ -2,12 +2,13 @@
 # tasks file for python3 - EL Family
 
 - name: EL Family | Installing epel-release
-  package:
+  ansible.builtin.package:
     name: epel-release
     state: present
     update_cache: yes
+
 - name: EL Family | Installing {{ python3_app_el_package }}
-  package:
+  ansible.builtin.package:
     name: "{{ python3_app_el_package }}"
     state: "{{ python3_desired_state }}"
     update_cache: yes
